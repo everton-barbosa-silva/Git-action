@@ -1,8 +1,7 @@
 name: teste_on_push template basico
 run-name: is testing out GitHub Actions 🚀
 on: [push]
-
-job: 
+jobs: 
   on-push:
     runs-on: ubuntu-latest
     steps:
