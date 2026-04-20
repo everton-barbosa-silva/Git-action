@@ -1,0 +1,14 @@
+name: teste_on_push template basico
+run-name: is testing out GitHub Actions 🚀
+on: [push]
+
+job: 
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: comentario
+        run: echo "Palmeiras não tem mundial"
+      - name: varicando o sabor do Linux
+        run: cat /etc/*release
+      - name: Listando arquivos do repositório
+        run: ls ${{ github.workspace }}
