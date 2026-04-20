@@ -16,3 +16,12 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+
+
+#Estrutura basica 
+#name é opcional e run-name é opcional, mas é uma boa prática para identificar o que o workflow faz.
+#on: [push] significa que o workflow será acionado toda vez que houver um push para o repositório. Você pode configurar outros eventos, como pull_request, schedule, etc.
+#jobs define os trabalhos que serão executados. Neste exemplo, temos um trabalho chamado Explore-GitHub-Actions.
+#runs-on: ubuntu-latest especifica que o trabalho será executado em um ambiente Ubuntu mais recente fornecido pelo GitHub.
+#steps define as etapas que serão executadas dentro do trabalho. Cada etapa pode ser um comando de shell ou uma ação pré-construída.
+#uses: actions/checkout@v5 é uma ação pré-construída que faz o checkout do código do repositório para o ambiente de execução, permitindo que você trabalhe com os arquivos do projeto.
